@@ -1,24 +1,18 @@
 macro_bn: macro_bn{
 compatible = "zmk,behavior-macro";
-label = "macro_brackets";
+label = "macro_bn";
 #binding-cells = <0>;
-wait-ms = <30>;
-tap-ms = <40>;
 bindings = <&kp COLON>, <&kp B>, <&kp N>, <&kp ENTER>;
 };
 macro_bp: macro_bp{
 compatible = "zmk,behavior-macro";
-label = "macro_brackets";
+label = "macro_bp";
 #binding-cells = <0>;
-wait-ms = <30>;
-tap-ms = <40>;
 bindings = <&kp COLON>, <&kp B>, <&kp P>, <&kp ENTER>;
 };
 new_term: new_term{
 compatible = "zmk,behavior-macro";
-label = "macro_brackets";
+label = "new_term";
 #binding-cells = <0>;
-wait-ms = <30>;
-tap-ms = <40>;
-bindings = <&kp LALT>, <&kp ENTER>;
+bindings = <&macro_press &kp LALT>, <&macro_tap &kp ENTER>, <&macro_release &kp LALT>;
 };
