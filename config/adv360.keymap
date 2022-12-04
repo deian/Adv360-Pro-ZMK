@@ -31,6 +31,15 @@
         flavor = "tap-preferred";
         bindings = <&kp>, <&kp>;
     };
+
+    // shift+enter = tab
+    se: shift_enter_mod {
+        compatible = "zmk,behavior-mod-morph";
+        #binding-cells = <0>;
+        label = "SHIFT_ENTER";
+        bindings = <&kp ENTER>, <&kp TAB>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
   };
 
     keymap {
