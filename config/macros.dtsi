@@ -10,9 +10,9 @@ label = "macro_bp";
 #binding-cells = <0>;
 bindings = <&kp COLON>, <&kp B>, <&kp P>, <&kp ENTER>;
 };
-new_term: new_term{
+macro_erm: macro_erm{
 compatible = "zmk,behavior-macro";
-label = "new_term";
+label = "macro_erm";
 #binding-cells = <0>;
 bindings = <&macro_press &kp LALT>, <&macro_tap &kp ENTER>, <&macro_release &kp LALT>;
 };
